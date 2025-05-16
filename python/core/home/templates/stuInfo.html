@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block start %}
+{{request.user}}
+<table style="width:100%" class="container my-4 col-6 border-1 border-warning shadow-lg text-black">
+    {% for d in data %}
+  <tr>
+    <th scope="row" class="text-center">{{forloop.counter}}</th>
+    <td class="text-center">{{d.subject.subject_name}}</td>
+    <td class="text-center">{{d.marks}}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock%}

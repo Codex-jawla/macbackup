@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block start %}
+<div class="container py-3">
+    <form action="/analyze" method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="text">Enter text to analyze</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="text" rows="6"></textarea>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="removepunc">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Remove Punctuation</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault1" name="extraspace">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Remove Extra Space</label>
+        </div>
+        <button type="submit" class="btn btn-dark mt-3 p-1">Analyze</button>
+    </form>
+</div>
+{% endblock %}
