@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+header {
+    padding-top: 6rem;
+    height: 120vh;
+    overflow: hidden;
+    width: 100%;
+
+
+
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+
+}
+
+/* CTA  */
+.CTA {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* ME  */
+.me {
+
+    width: 20rem;
+    height: 20rem;
+    background: linear-gradient(var(--color-primary), transparent);
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+    margin-top: 9rem;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+.hello
+{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    font-family: 'Shadows Into Light', cursive;
+    animation-delay: 1.1s;
+}
+.me img {
+    height: 95%;
+    width: 95%;
+    position: absolute;
+    animation-name: example;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        top: 20px;
+    }
+
+    25% {
+        top: 20px;
+    }
+
+    50% {
+        top: 295px;
+    }
+
+    75% {
+        top: 295px;
+    }
+
+    100% {
+        top:20px;
+    }
+}
+
+/* Responsice design  */
+@media screen and (max-width:600px) {
+    header {
+        height: 100vh;
+    }
+}
