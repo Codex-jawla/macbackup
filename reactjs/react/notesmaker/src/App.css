@@ -1,0 +1,35 @@
+.mainhead{
+  width: 100%;
+  line-height: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: rgb(237, 237, 116);
+  box-shadow: 5px 3px 15px -5px black;
+  
+}
+.imgs img{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 9px;
+  padding-bottom: 0px;
+}
+.title{
+  margin-left: 1rem;
+}
+.title h2{
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: oblique;
+}
+.mainfoot{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  right: 29%;
+}
+.mainfoot p{
+  color: rgb(45, 44, 44);
+}
